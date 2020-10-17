@@ -1,5 +1,5 @@
 
-<form>
+<form class="character-form">
     <label for="player_name">Enter in your player name.</label>
     <input type="text" id="player_name" name="player_name">
 
@@ -14,12 +14,14 @@
     </select>
 
     <label for="race">Select a class:</label>
-    <select id="char_race" name="char_race">
-        <option value="Human">Rogue</option>
-        <option value="Elf">Mage</option>
-        <option value="Dwarf">Knight</option>
+    <select id="char_class" name="char_class">
+        <option value="Rogue">Rogue</option>
+        <option value="Mage">Mage</option>
+        <option value="Knight">Knight</option>
     </select>
 
-    <button type="submit"></button>
+    <button id="signUpBtn" type="submit">Submit</button>
 </form>
+
+<script src="../public/js/index.js" type="text/javascript"></script>
 <!-- form for character creation/signup -->
