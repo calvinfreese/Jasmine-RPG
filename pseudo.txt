@@ -1,0 +1,10 @@
+1. Create Database
+2. Create Player Character Model (table)
+    1. Add attributes?
+    2. Add association to location/story
+3. Add Enemy Model (table)
+4. Add Location Model (table)
+5. Add Story Model (prompts table)
+3. Add Authentication
+4. Routing per html
+5. Routing per api 
