@@ -4,7 +4,6 @@ module.exports = function(app) {
   // Get all examples
   app.get("/api/characters", function(req, res) {
     db.character.findAll({}).then(function(dbChars) {
-      
       res.json(dbChars);
     });
   });
