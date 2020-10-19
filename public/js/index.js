@@ -7,6 +7,7 @@ var $exampleList = $("#example-list");
 // The API object contains methods for each kind of request we'll make
 var API = {
   saveCharacter: function(newCharacter) {
+    console.log(newCharacter);
     return $.ajax({
       headers: {
         "Content-Type": "application/json"
@@ -71,12 +72,12 @@ var handleFormSubmit = function(event) {
     player_class: $("#char_class").val().trim()
   };
 
-  if (!(player_name && player_age && player_race && player_class)) {
+  if (!(newCharacter)) {
     alert("All fields are required!");
     return;
   }
-  console.log(newCharacter);
-  API.saveCharacter(newCharacter.player_name, newCharacter.player_age, newCharacter.player_race, newCharacter.player_class).then(function() {
+  
+  API.saveCharacter(newCharacter).then(function() {
     console.log('hi!');
   });
 
