@@ -4,13 +4,13 @@ var path = require("path");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    res.render("index");
+    res.render("createPlayer");
   });
 
 
   app.get("/signedIn", function(req, res){
     
-    res.render("signedIn");
+    res.render("allCharacters");
   })
   // Load example page and pass in an example by id
   app.get("/characters/:id", function(req, res) {
