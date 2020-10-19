@@ -6,9 +6,8 @@ module.exports = function(sequelize, DataTypes) {
     player_class: DataTypes.STRING,
     player_strength: DataTypes.INTEGER,
     player_magic: DataTypes.INTEGER,
-    player_health: DataTypes.INTEGER
-  },
-  Character.associate());
+    player_health: DataTypes.INTEGER 
+  });
   return Character;
 };
 
