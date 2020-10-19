@@ -4,18 +4,18 @@ var path = require("path");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    // If the user already has an account send them to the members page
+    // console.log(req.user);
     // if (req.user) {
-    //   res.redirect("/members");
+    //   res.redirect("/signedIn");
     // }
-    res.render(path.join(__dirname, "../views/signup.handlebars"));
+    res.render("index");
   });
 
   // Load example page and pass in an example by id
-  app.get("/example/:id", function(req, res) {
-    db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
+  app.get("/characters/:id", function(req, res) {
+    db.Example.findOne({ where: { id: req.params.id } }).then(function(dbChar) {
       res.render("example", {
-        example: dbExample
+        character: dbChar
       });
     });
   });
