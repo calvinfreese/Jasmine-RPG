@@ -10,7 +10,12 @@ module.exports = function(app) {
 
   // Create a new example
   app.post("/api/characters", function(req, res) {
-    db.Character.create(req.body).then(function(dbChar) {
+    db.character.create({
+      player_name: req.body.player_name,
+      player_age:req.body.player_age,
+      player_race: req.body.player_race,
+      player_class: req.body.player_class
+    }).then(function(dbChar) {
       console.log(dbChar);
       res.json(dbChar);
     });
