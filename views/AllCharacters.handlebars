@@ -2,10 +2,11 @@
 
 {{#each characters}}
 <div class="card" style="width: 18rem;">
-    <div class="card-body">
+    <div class="card-body" data-id="{{id}}">
         <h5 class="card-title">Name: {{player_name}}</h5>
         <h6 class="card-subtitle mb-2 text-muted">{{player_race}} {{player_class}}</h6>
         <p class="card-text">Age: {{player_age}}</p>
+        <button type="button" class="btn btn-danger deleteChar">Delete Character</button>
     </div>
 </div>
 {{/each}}

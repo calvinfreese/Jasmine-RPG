@@ -78,7 +78,7 @@ var handleFormSubmit = function(event) {
   }
   
   API.saveCharacter(newCharacter).then(function() {
-    window.location.replace("/signedIn");
+    console.log(newCharacter, ' added!');
   });
 
   $exampleText.val("");

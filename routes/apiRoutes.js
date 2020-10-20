@@ -2,12 +2,12 @@ var db = require("../models");
 
 module.exports = function(app) {
   // Get all examples
-  // app.get("/api/characters", function(req, res) {
-  //   db.character.findAll({}).then(function(dbChars) {
+  app.get("/api/characters", function(req, res) {
+    db.character.findAll({}).then(function(dbChars) {
       
-  //     res.render("AllCharacters", dbChars)
-  //   });
-  // });
+      res.json(dbChars);
+    });
+  });
 
   // Create a new example
   app.post("/api/characters", function(req, res) {
@@ -17,15 +17,15 @@ module.exports = function(app) {
       player_race: req.body.player_race,
       player_class: req.body.player_class
     }).then(function(dbChar) {
-      console.log(dbChar);
-      res.render(dbChar);
+      
+      res.json(dbChar);
     });
   });
 
   // Delete an example by id
   app.delete("/api/characters/:id", function(req, res) {
-    db.Character.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.json(dbExample);
+    db.character.destroy({ where: { id: req.params.id } }).then(function(dbChar) {
+      res.json(dbChar);
     });
   });
 };

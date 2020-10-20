@@ -1,11 +1,27 @@
-// $.get( "/api/characters", function(data) {
-//   let character = {
-//        name: data[0].player_name,
-//        age: data[0].player_age,
-//        race: data[0].player_race,
-//        class: data[0].player_class,
-//    }
-//    console.log(character);
-  
-//    return character
-//   });
+function deleteCharacter() {
+    let charToDelete = $(this).parent().attr("data-id");
+
+    $.ajax({
+        method: "DELETE",
+        url: "/api/characters/" + charToDelete
+    })
+    .then(getCharacters);
+}
+
+
+function getCharacters(){
+
+    console.log('hello');
+    $.ajax({
+        method: "GET",
+        url: "/api/characters"
+    })
+    .then(res => {
+        window.location.reload();
+    });
+}
+
+
+
+
+$(".deleteChar").on("click", deleteCharacter);
