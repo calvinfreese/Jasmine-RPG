@@ -10,7 +10,7 @@ module.exports = function(app) {
 
   app.get("/AllCharacters", function(req, res){
     db.character.findAll({}).then(function(dbChars) {
-      console.log(dbChars[0]);
+      
       res.render("AllCharacters", { characters: dbChars });
   
   });
