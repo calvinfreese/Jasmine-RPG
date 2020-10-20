@@ -66,10 +66,10 @@ var handleFormSubmit = function(event) {
   event.preventDefault();
 
   var newCharacter = {
-    player_name: $("#player_name").val().trim(),
-    player_age: $("#player_age").val().trim(),
-    player_race: $("#char_race").val().trim(),
-    player_class: $("#char_class").val().trim()
+    name: $("#player_name").val().trim(),
+    age: $("#player_age").val().trim(),
+    race: $("#char_race").val().trim(),
+    class: $("#char_class").val().trim()
   };
 
   if (!(newCharacter)) {
