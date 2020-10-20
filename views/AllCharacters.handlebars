@@ -1,14 +1,14 @@
-<h1>All Characters</h1> 
+<h1>All Characters</h1>
 
-<ul>
-    
-    <li>Name:{{name}}</li>
-    <li>Age:{{age}}</li>
-    <li>Race:{{race}}</li>
-    <li>Class:{{class}}</li>
-    
-</ul>
-
+{{#each characters}}
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">Name: {{player_name}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{player_race}} {{player_class}}</h6>
+        <p class="card-text">Age: {{player_age}}</p>
+    </div>
+</div>
+{{/each}}
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/allCharacters.js"></script>
