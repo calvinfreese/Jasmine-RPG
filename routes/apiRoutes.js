@@ -2,11 +2,12 @@ var db = require("../models");
 
 module.exports = function(app) {
   // Get all examples
-  app.get("/api/characters", function(req, res) {
-    db.character.findAll({}).then(function(dbChars) {
-      res.json(dbChars);
-    });
-  });
+  // app.get("/api/characters", function(req, res) {
+  //   db.character.findAll({}).then(function(dbChars) {
+      
+  //     res.render("AllCharacters", dbChars)
+  //   });
+  // });
 
   // Create a new example
   app.post("/api/characters", function(req, res) {
@@ -17,7 +18,7 @@ module.exports = function(app) {
       player_class: req.body.player_class
     }).then(function(dbChar) {
       console.log(dbChar);
-      res.json(dbChar);
+      res.render(dbChar);
     });
   });
 

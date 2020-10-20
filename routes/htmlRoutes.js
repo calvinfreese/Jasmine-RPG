@@ -8,10 +8,13 @@ module.exports = function(app) {
   });
 
 
-  app.get("/signedIn", function(req, res){
-    
-    res.render("allCharacters");
-  })
+  app.get("/AllCharacters", function(req, res){
+    db.character.findAll({}).then(function(dbChars) {
+      console.log(dbChars[0]);
+      res.render("AllCharacters", { characters: dbChars });
+  
+  });
+});
   // Load example page and pass in an example by id
   app.get("/characters/:id", function(req, res) {
     db.Example.findOne({ where: { id: req.params.id } }).then(function(dbChar) {
@@ -26,3 +29,4 @@ module.exports = function(app) {
     res.render("404");
   });
 };
+// hello again
