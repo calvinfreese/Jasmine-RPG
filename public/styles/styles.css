@@ -1,3 +1,126 @@
 .list-group-item {
   line-height: 2.5;
 }
+
+/* All */
+
+.list-group-item {
+  line-height: 2.5;
+}
+.col-8 .offset-2 {}
+
+.Submit-button {} 
+
+.list {}
+
+/* Index.Js */
+
+#example-text {}
+
+#example-description {}
+
+#signUpBtn {}
+
+#example-list {}
+
+.list-group-item {}
+
+.data-id {}
+
+.button {}
+
+#player-name {}
+
+#player-age {}
+
+#player-race {}
+
+#player-class {}
+
+.character-form {}
+
+.delete {}
+
+.submit {}
+ 
+.click {}
+
+/* Signup.handlebars */
+
+.home {}
+
+.container {}
+
+.row {}
+
+.col-8 .offset-2 {}
+
+.clearfix .mb-4 {}
+
+.form-group {}
+
+.example-text {}
+
+.form-control {}
+
+.form-group {}
+
+.example-list {}
+
+.list-group {} 
+
+.list-group-item {}
+
+.btn .btn-danger .float-right .delete
+
+.this.id {}
+
+.this.text {}
+
+/* Character.js */
+
+.character {}
+
+/* Main.Handlebars */
+
+/* 404.handlebars */
+
+.container {}
+
+.jumbotron .mt-4 {}
+
+.display-4 .text-center {}
+
+/* CreatePlayer.handlebars */ 
+
+.character-form {}
+
+.player-name {}
+
+.char-race {}
+
+.char-class {}
+
+.player-age {}
+
+.signUpBtn {}
+
+/* Example.handlebars */
+
+.container {}
+
+.row {}
+
+.col-8 .offset-2 {}
+
+.card .mt-4 {}
+
+.card-body {}
+
+.card-title {}
+
+.example.id {}
+
+.example.text {}
+
+.example.description {}
