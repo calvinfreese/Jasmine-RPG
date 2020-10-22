@@ -1,6 +1,6 @@
 <h1>All Characters</h1>
 
-{{#each characters}}
+{{!-- {{#each characters}}
 <div class="card" style="width: 18rem;">
     <div class="card-body" data-id="{{id}}">
         <h5 class="card-title">Name: {{name}}</h5>
@@ -12,7 +12,38 @@
         <button type="button" class="btn btn-danger deleteChar">Delete Character</button>
     </div>
 </div>
-{{/each}}
+{{/each}} --}}
+<div>
+    <table class="table table-striped table-dark">
+        <thead>
+            <tr>
+
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Race</th>
+                <th scope="col">Class</th>
+                <th scope="col">Strength</th>
+                <th scope="col">Magic</th>
+                <th scope="col">Hitpoints</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each characters }}
+            <tr data-id='{{id}}'>
+
+                <td>{{name}}</td>
+                <td>{{age}}</td>
+                <td>{{race}}</td>
+                <td>{{class}}</td>
+                <td>{{strength}}</t>
+                <td>{{magic}}</td>
+                <td>{{health}}</td>
+                <td><button type="button" class="btn btn-danger deleteChar">Delete Character</button></td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/allCharacters.js"></script>
