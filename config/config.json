@@ -1,14 +1,14 @@
 {
   "development": {
-    "username": "new",
-    "password": "#Mello1560",
+    "username": "root",
+    "password": "",
     "database": "jasmine_rpg",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
-    "username": "potato",
-    "password": "1pass2word3",
+    "username": "root",
+    "password": "",
     "database": "jasmine_rpg",
     "host": "localhost",
     "dialect": "mysql",
