@@ -29,9 +29,22 @@ app.get("/adventures", function(req, res) {
     });
   });
 
-  // Render 404 page for any unmatched routes
-  app.get("*", function(req, res) {
-    res.render("404");
-  });
+
+app.get("/missions", function (req, res){
+  res.render("missions");
+});
+
+app.get("/training", function(req, res){
+  res.render("training");
+});
+
+app.get("/fight-pits", function(req, res) {
+  res.render("fightPits");
+});
+
+// Render 404 page for any unmatched routes
+app.get("*", function(req, res) {
+  res.render("404");
+});
 };
 // hello again
