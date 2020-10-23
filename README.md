@@ -1,38 +1,57 @@
-# Project Starter
+# Jasmine Game
 
-In this activity we will add the provided boilerplate to group project repos.
+#### Table of Contents
+  * [Description](#Description)
+  * [Installation](#Installation)
+  * [Screenshots](#Screenshots)
+  * [Credits](#Credits)
+  * [License](#License)
 
-## Instructions
+## Description
 
-* Only one member of each group should complete this activity while the others watch.
+ 
+## Installation
+#### Technologies Used
+* HTML
+* JavaScript
+* [MySQL](https://www.mysql.com/) & [MySQL Workbench](https://www.mysql.com/products/workbench/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/package/npm)
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [cmder](https://cmder.net/)
 
-* Copy the entire [Unsolved](Unsolved) folder to another location on your computers &mdash; wherever you would like your local copy of the group project to be.
+#### Steps
+1. * Start by entering the following in your terminal: `Git clone `
 
-* Rename the copied "Unsolved" folder to the name of your project.
+2. * Change directory to `Jasmine-RPG` and enter `npm install` into your terminal. This will install all package dependencies.
 
-* Open the copied project folder's `package.json` file and change its `name` property to the name of your project.
+3. * Add node_modules to .gitignore.
 
-* CD to the root of the copied project folder with your terminal and run the following commands:
+4. * Create a `config.js` file based on the template [here](./config/config.js.example).
+    * If file `config.js` is created in another location other than the parent folder, remember to update `server.js` `const credentials = require('./config')` with the new relative path.
+    * Replace `<ID>` in the `user` and `password` fields in `config.js` with the credential information for the database.
 
-  ```
-  git init
-  git add .
-  git commit -m "Initial commit"
-  ```
+5. * Copy Database and Table setup from `./models/schema.sql`
+        * Paste into MySQL Workbench and execute.
 
-* Then copy the GitHub repo's remote SSH URL (the same URL you'd use to clone the repo).
+* Start the application by running `npm start`
 
-* Run the following commands in your terminal, replacing <remote-url> with your GitHub repo's remote SSH URL.
 
-  ```
-  git remote add origin <remote-url>
-  git push origin master
-  ```
 
-* If completed successfully you should see all of the files uploaded to GitHub.
+## Screenshots
+#### Create Character
+![Tour](#placeholder)
+#### View Characters
+ ![home](#placeholder)
 
-* All other group members should now clone the repo.
+#### Adventures Page
+![home](#placeholder)
 
-* Discuss as a group:
 
-  * How would you now add changes to this project?
+
+## Credits
+This assignment was provided by Trilogy Education Services. All files were created based on in class activities and lectures, [MDN](https://developer.mozilla.org/en-US/) Reference Documents for JavaScript syntax [JSHint](https://jshint.com/) for JavaScript validation, and various other online resources. 
+## License
+
+[License](LICENSE)
+MIT &copy; 2020 Team Jasmine (Foos Mahamud, Liban Esse, Billy Sheehan, and Calvin Freese)
