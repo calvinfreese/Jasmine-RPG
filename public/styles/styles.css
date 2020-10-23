@@ -1,133 +1,70 @@
-.list-group-item {
-  line-height: 2.5;
-}
 
-/* All */
-
-.list-group-item {
-  line-height: 2.5;
-}
-.col-8 .offset-2 {}
-
-.Submit-button {} 
-
-.list {}
-
-/* Index.Js */
-
-#example-text {}
-
-#example-description {}
-
-#signUpBtn {}
-
-#example-list {}
-
-.list-group-item {}
-
-.data-id {}
-
-.button {}
-
-#player-name {}
-
-#player-age {}
-
-#player-race {}
-
-#player-class {}
-
-.character-form {}
-
+/* Actions */
+.click {}
+.submit {}
 .delete {}
 
-.submit {}
- 
-.click {}
-
-/* Signup.handlebars */
-
+/* Utility */
+.container {}
+.clearfix .mb-4 {}
+.col-8 .offset-2 {}
+.data-id {}
+.jumbotron .mt-4 {}
+.display-4 .text-center {}
+.this.id {}
+.this.text {}
+.row {}
 .home {}
 
-.container {}
-
-.row {}
-
-.col-8 .offset-2 {}
-
-.clearfix .mb-4 {}
-
-.form-group {}
-
-.example-text {}
-
-.form-control {}
-
-.form-group {}
-
-.example-list {}
-
-.list-group {} 
-
-.list-group-item {}
-
-.btn .btn-danger .float-right .delete
-
-.this.id {}
-
-.this.text {}
-
-/* Character.js */
-
+/* Character */
 .character {}
-
-/* Main.Handlebars */
-
-/* 404.handlebars */
-
-.container {}
-
-.jumbotron .mt-4 {}
-
-.display-4 .text-center {}
-
-/* CreatePlayer.handlebars */ 
-
 .char-div {
   margin-top: 70px;
 }
-
 .character-form {}
-
-.player-name {}
-
 .char-race {}
-
 .char-class {}
 
-.player-age {}
-
+/* Buttons */
+#signUpBtn {}
 .signUpBtn {}
+.button {}
+.Submit-button {} 
+.btn .btn-danger .float-right .delete
 
-/* Example.handlebars */
-
-.container {}
-
-.row {}
-
-.col-8 .offset-2 {}
-
+/* Card */
 .card .mt-4 {}
-
 .card-body {}
-
 .card-title {}
 
+/* List Items* */
+.list {}
+.list-group-item {
+  line-height: 2.5;
+}
+.list-group {} 
+
+/* Examples */
+.example-text {}
+#example-text {}
+#example-description {}
+#example-list {}
+.example-list {}
 .example.id {}
-
-.example.text {}
-
 .example.description {}
+
+/* Form */
+.character-form {}
+.form-group {}
+.form-control {}
+
+/* Player */
+#player-name {}
+#player-age {}
+#player-race {}
+#player-class {}
+.player-age {}
+.player-name {}
 
 /*  missions */
 .missions-page { 
