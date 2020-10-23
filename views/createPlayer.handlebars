@@ -1,25 +1,44 @@
-<form class="character-form">
-    <label for="player_name">Enter in your player name.</label>
-    <input type="text" id="player_name" name="player_name">
+<div class="container char-div">
+    <h2>Create A Character</h2>
+    <form class="character-form">
+        <div class="form-group">
+            <label for="player_name">Enter in your player name.</label>
+            <input type="text" class="form-control" id="player_name" name="player_name">
+        </div>
 
-    <label for="player_age">Enter in your age.</label>
-    <input type="text" id="player_age" name="player_age">
 
-    <label for="race">Select a race:</label>
-    <select id="char_race" name="char_race">
-        <option value="Human">Human</option>
-        <option value="Elf">Elf</option>
-        <option value="Dwarf">Dwarf</option>
-    </select>
+        <div class="form-group">
+            <label for="player_age">Enter in your age.</label>
+            <input type="text" class="form-control" id="player_age" name="player_age">
+        </div>
 
-    <label for="race">Select a class:</label>
-    <select id="char_class" name="char_class">
-        <option value="Rogue">Rogue</option>
-        <option value="Mage">Mage</option>
-        <option value="Knight">Knight</option>
-    </select>
 
-    <button id="signUpBtn" type="submit">Submit</button>
-</form>
+        <div class="form-group">
+            <label for="race">Select a race:</label>
+            <select id="char_race" class="form-control" name="char_race">
+                <option value="Human">Human</option>
+                <option value="Elf">Elf</option>
+                <option value="Dwarf">Dwarf</option>
+            </select>
+        </div>
+
+
+        <div class="form-group">
+            <label for="race">Select a class:</label>
+            <select id="char_class" class="form-control" name="char_class">
+                <option value="Rogue">Rogue</option>
+                <option value="Mage">Mage</option>
+                <option value="Knight">Knight</option>
+            </select>
+        </div>
+
+
+        <button id="signUpBtn" class="btn  btn-primary" type="submit">Submit</button>
+    </form>
+
+</div>
+
+
+
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
