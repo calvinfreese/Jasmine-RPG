@@ -1,4 +1,4 @@
-.this.id {}
+/*.this.id {}
 .this.text {}
 .row {}
 .home {}
@@ -12,15 +12,21 @@
 .char-race {}
 .char-class {}
 
-/* Buttons */
+/* Buttons  */
 #signUpBtn {}
 .signUpBtn {}
 .button {}
 .Submit-button {} 
-.btn .btn-danger .float-right .delete
+.btn .btn-danger .float-right .delete {}
 
-/* Card */
-.card .mt-4 {}
+.card {
+  margin-bottom: 20px;
+  
+}
+/*.card .mt-4 {
+
+
+}
 .card-body {}
 .card-title {}
 

@@ -1,24 +1,62 @@
-<h1>I'm the adventure page!</h1>
-<div class="container">
-    <div class="row">
-        <div class="col-sm">
-            <i class="fas fa-broom"></i>
-            <a class="btn btn-success" href="/missions">Go on an adventure</a> prompts the modal
-        </div>
-        <div class="col-sm">
-            <div>
-                <img src="sword.svg">
-                Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>
-                from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/styles/styles.css" media="screen" title="no title" charset="utf-8">
+    <title>I'm the adventure page!</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card" id="card1">
+                    <div class="card-body">
+                        <h5 class="card-title">Adventure Time</h5>
+                        <p class="card-text">Welcom to Adventure Time</p>
+                        <a class="btn btn-success" href="/missions">Go on an adventure</a>
+                    </div>
+                </div>
             </div>
-            <a class="btn btn-success" href="/fight-pits">Fight-Pits</a> prompts the modal
         </div>
-        <div class="col-sm">
-            <img>
-            <a class="btn btn-success" href="/training">Training</a> prompts the modal
+        <div class="row">
+            <div class="col-sm">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Fight Pits</h5>
+                        <p class="card-text">Welcom to the Fighting pits</p>
+                        <div>
+                            <img src="sword.svg">
+                            Icons made by <a href="https://www.flaticon.com/authors/smashicons"
+                                title="Smashicons">Smashicons</a>
+                            from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+                        </div>
+                        <a class="btn btn-success" href="/fight-pits">Fight-Pits</a> prompts the modal
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Welcom to the Training</h5>
+                                <p class="card-text"> Training </p>
+                            </div>
+                        
+                        <div>
+                            <img>
+                            <a class="btn btn-success" href="/training">Training</a> prompts the modal
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+
+</body>
+
+</html>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/allCharacters.js"></script>
