@@ -1,5 +1,7 @@
 function deleteCharacter() {
-    let charToDelete = $(this).parent().attr("data-id");
+    
+    //finds the closest <tr>'s data-id attribute value up the DOM tree from the button
+    let charToDelete = $(this).closest("tr").attr("data-id");
 
     $.ajax({
         method: "DELETE",
