@@ -73,3 +73,8 @@
       opacity: 1; 
   } 
 } 
+
+
+.mission-animation {
+  display: none;
+}
