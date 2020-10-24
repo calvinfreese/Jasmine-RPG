@@ -19,6 +19,10 @@ function saveSelectValues(event) {
 
     console.log(characterID);
     console.log(journeyID);
+
+    $(".show-mission").show();
+
+   
 }
 
 function resetAdventure() {
@@ -49,3 +53,4 @@ function animate() {
 
 $(".next").on("click", hideInput1);
 $(".hide-mission-select").on("click", saveSelectValues);
+$(".show-mission").on("click", resetAdventure)
