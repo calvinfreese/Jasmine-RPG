@@ -1,23 +1,30 @@
 <div class="container missions-page">
 
-    <div class="mission-box">
-        <h2>Mission Select</h2>
+    <form>
 
-        <div>
-            <button type="button" class="btn btn-warning hide-mission">Adventure Now</button>
+        <div class="form-group">
+            <label for="char-select">Character select</label>
+            <select class="form-control" id="char-select" name="char-select">
+
+                {{#each characters}}
+                <option value='{{id}}'>{{name}}</option>
+                {{/each}}
+            </select>
         </div>
-    </div>
+        <div class="mission-box">
+            <h2>Mission Select</h2>
+
+            <div>
+                <button type="button" class="btn btn-warning hide-mission">Adventure Now</button>
+            </div>
+        </div>
+    </form>
 
     <div class="mission-animation">
         <h2>Mission Animation</h2>
         <button type="button" class="btn btn-warning show-mission">Adventure Now</button>
     </div>
 
-
-
-    <button type="button" class="btn btn-warning 1mission">1</button>
-    <button type="button" class="btn btn-warning 2mission">2</button>
-    <button type="button" class="btn btn-warning 3mission">3</button>
 
 </div>
 
