@@ -1,0 +1,62 @@
+<div class="container char-div">
+    <div class="container">
+        <h2>Create A Journey</h2>
+        <form class="journey-form">
+            <div class="form-group">
+                <label for="journey">Enter in a journey prompt</label>
+                <input type="text" class="form-control" id="journeyText" name="journey">
+            </div>
+
+
+            <div class="form-group">
+                <label for="xp">Enter in the xp to be gained on completion</label>
+                <input type="text" class="form-control" id="journeyXP" name="xp">
+            </div>
+            <button id="promptBtn" class="btn  btn-success" type="submit">Submit Prompt</button>
+        </form>
+    </div>
+
+    <div class="container char-div">
+
+
+        <h2>Create Enemy</h2>
+        <form class="enemy-form">
+            <div class="form-group">
+                <label for="enemy">Enemy Name</label>
+                <input type="text" class="form-control" id="enemyName" name="enemy">
+            </div>
+
+            <div class="form-group">
+                <label for="race">Enemy Type</label>
+                <select class="form-control" id="enemyRace" name="race">
+                    <option value='goblin'>Goblin</option>
+                    <option value='highwayman'>Highwayman</option>
+                    <option value='skeleton'>Skeleton</option>
+                    <option value='dragon'>Dragon</option>
+                    <option value='wyrm'>Wyrm</option>
+                    <option value='dire-squirrel'>Dire Squirrel</option>
+                    <option value='lich-lord'>Lich Lord</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="str">Enter in enemy's strength</label>
+                <input type="text" class="form-control" id="enemySTR" name="str">
+            </div>
+
+            <div class="form-group">
+                <label for="health">Enter in enemy's health</label>
+                <input type="text" class="form-control" id="enemyHP" name="health">
+            </div>
+            <button id="enemyBtn" class="btn  btn-success" type="submit">Submit Enemy</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/populateModel.js"></script>

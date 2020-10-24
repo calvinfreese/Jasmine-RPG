@@ -1,5 +1,6 @@
 let arr = ['alpha', 'beta', 'charlie', 'delta', 'edward'];
 
+
 function startAdventure() {
     console.log("hi");
     $(".mission-box").hide(1000,"swing",function(){
@@ -15,7 +16,6 @@ function resetAdventure() {
     $(".mission-animation").hide(400, "swing", function(){
         console.log("show mission select");
         $(".mission-box").show();
-        animate();
     })
 }
 
@@ -23,8 +23,7 @@ function resetAdventure() {
 
 
 function randomizeMissions() {
-    
-    
+      
     for (let i = 0; i < arr.length; i++) {
         
     $('.1mission').text(arr[Math.floor(Math.random() * arr.length)]);

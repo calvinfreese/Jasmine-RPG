@@ -7,6 +7,10 @@ module.exports = function(app) {
     res.render("createPlayer");
   });
 
+  app.get("/load-model", function(req, res) {
+    res.render("loadModel");
+  });
+
 
   app.get("/AllCharacters", function(req, res){
     db.character.findAll({}).then(function(dbChars) {
@@ -20,6 +24,7 @@ module.exports = function(app) {
 app.get("/adventures", function(req, res) {
   res.render("adventures");
 });
+
   // Load example page and pass in an example by id
   app.get("/characters/:id", function(req, res) {
     db.Example.findOne({ where: { id: req.params.id } }).then(function(dbChar) {
@@ -31,7 +36,10 @@ app.get("/adventures", function(req, res) {
 
 
 app.get("/missions", function (req, res){
-  res.render("missions");
+  db.character.findAll({}).then(function(dbChars) {
+      
+    res.render("missions", { characters: dbChars });
+  });
 });
 
 app.get("/training", function(req, res){
