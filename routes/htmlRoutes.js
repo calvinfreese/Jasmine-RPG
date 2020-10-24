@@ -37,8 +37,9 @@ app.get("/adventures", function(req, res) {
 
 app.get("/missions", function (req, res){
   db.character.findAll({}).then(function(dbChars) {
-      
-    res.render("missions", { characters: dbChars });
+      db.journey.findAll({}).then(function(dbJourneys) {
+        res.render("missions", { characters: dbChars, journeys: dbJourneys });
+      });    
   });
 });
 

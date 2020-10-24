@@ -1,39 +1,51 @@
+
+
 let arr = ['alpha', 'beta', 'charlie', 'delta', 'edward'];
 
 
-function startAdventure() {
-    console.log("hi");
-    $(".mission-box").hide(1000,"swing",function(){
-        console.log('hidden');
-        $(".mission-animation").show();
-        
+function hideInput1() {
+    $(".input1").hide(400, "swing", function(){
+       
+        $(".input2").show();
+        $(".hide-mission-select").show();
     });
-    
+}
+
+
+function saveSelectValues(event) {
+    event.preventDefault();
+    let characterID = $("#char-select").val().trim();
+    let journeyID = $("#journey-select").val().trim();
+
+    console.log(characterID);
+    console.log(journeyID);
 }
 
 function resetAdventure() {
     console.log("hi again");
     $(".mission-animation").hide(400, "swing", function(){
         console.log("show mission select");
+        animate();
         $(".mission-box").show();
     })
 }
 
-
-
-
-function randomizeMissions() {
-      
-    for (let i = 0; i < arr.length; i++) {
-        
-    $('.1mission').text(arr[Math.floor(Math.random() * arr.length)]);
-    $('.2mission').text(arr[Math.floor(Math.random() * arr.length)]);
-    $('.3mission').text(arr[Math.floor(Math.random() * arr.length)]);
-
-    }
+function animate() {
+    let path = anime.path('.treasureMap path');
+    anime({
+        targets: "#Capa_1 .travel-box",
+        translateX: path('x'),
+        translateY: path('y'),
+        rotate: path('angle'),
+        backgroundColor: '#FFF',
+        easing: 'linear',
+        duration: 1000,
+        loop: true
+    });
 }
 
 
-randomizeMissions();
-$(".hide-mission").on("click", startAdventure);
-$(".show-mission").on("click", resetAdventure);
+
+
+$(".next").on("click", hideInput1);
+$(".hide-mission-select").on("click", saveSelectValues);
