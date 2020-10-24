@@ -60,10 +60,20 @@
 .player-name {}
 
 
-
+/* Adventures  */
+.card {
+  width: fit-content;
+}
+.sword {
+  height: 150px;
+  width: 150px;
+  /* margin-top: 15px;
+  margin-left: 15px; */
+  margin: 0 auto;
+}
 
 /*  missions */
-.missions-page { 
+.fadin-page { 
   animation: fadeInAnimation ease 3s; 
   animation-iteration-count: 1; 
   animation-fill-mode: forwards; 
@@ -81,12 +91,17 @@
   display: none;
 }
 
-.mission-animation {
-  display: none;
+.animation {
+  height: 30px;
+  width: 30px;
+  background-color: 
 }
 
 /* svg treasure map */
-#Capa_1 {
-  height: 200px;
-  width: 200px;
+.treasure-map {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
 }
+
+

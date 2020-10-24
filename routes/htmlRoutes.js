@@ -44,11 +44,15 @@ app.get("/missions", function (req, res){
 });
 
 app.get("/training", function(req, res){
+ 
   res.render("training");
 });
 
 app.get("/fight-pits", function(req, res) {
-  res.render("fightPits");
+  db.enemy.findAll({}).then(function(dbEnemies){
+    res.render("fightPits", {enemies: dbEnemies});
+  });
+  
 });
 
 // Render 404 page for any unmatched routes
