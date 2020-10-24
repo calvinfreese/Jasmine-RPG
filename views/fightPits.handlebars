@@ -6,7 +6,41 @@
 {{!-- form (shown) --}}
 
 
+<div class="container enemy-page">
 
+    <div class="mission-box char-div">
+        <form class="enemy-select-form">
+            <h2>Fight Pits</h2>
+            <div class="form-group input1">
+                <label for="character-select">Character select</label>
+                <select class="form-control" id="char-select" name="char-select">
+
+                    {{#each enemy}
+                    <option value='{{id}}'>{{name}}</option>
+                    {{/each}}
+                </select>
+                <button type="button" class="btn btn-warning next">Next</button>
+            </div>
+
+
+            <div class="form-group input2">
+                <label for="enemy-select">Enemy select</label>
+                <select class="form-control" id="enemy-select" name="enemy-select">
+
+                    {{#each enemy}}
+                    <option value='{{id}}'>{{name}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            <button type="button" class="btn btn-warning hide-enemy-select">Enemy Now</button>
+    </div>
+
+
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="/js/missions.js"></script>
 
 {{!-- card or div(row/col)= display of none in css [see mission-animation class in css for example of display:none]--}}
 {{!-- you defeated x amt of enemies --}}
