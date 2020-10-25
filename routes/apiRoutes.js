@@ -35,6 +35,20 @@ module.exports = function(app) {
     });
   });
 
+
+  // update character where id = req.body.id
+  app.put("/api/characters", function(req, res){
+    db.character.update(
+      req. body, 
+      {
+        where: {
+          id: req.body.id
+        }
+    }). then(function(data){
+      res.json(data);
+    });
+  });
+
   // Delete a character by id
   app.delete("/api/characters/:id", function(req, res) {
     db.character.destroy({ where: { id: req.params.id } }).then(function(dbChar) {
@@ -68,6 +82,8 @@ module.exports = function(app) {
     db.journey.create({
       name: req.body.name,
       xp: req.body.xp,
+      item_type: req.body.item_type,
+      item_name: req.body.item_name
     }).then(function(dbJourney) {
       
       res.json(dbJourney);
