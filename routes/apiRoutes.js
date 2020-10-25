@@ -9,6 +9,19 @@ module.exports = function(app) {
     });
   });
 
+  // get One Character
+  app.get("/api/characters/:id", function(req, res) {
+    db.character.findOne({
+      where:{
+        id: req.params.id
+      }
+    }).then(function(dbChar) {
+      
+      res.json(dbChar));
+    });
+  });
+
+
   // Create a new Character
   app.post("/api/characters", function(req, res) {
     db.character.create({
@@ -38,6 +51,18 @@ module.exports = function(app) {
     });
   });
 
+  // get One Journey
+  app.get("/api/journeys/:id", function(req, res) {
+    db.journey.findOne({
+      where:{
+        id: req.params.id
+      }
+    }).then(function(dbJourney) {
+      
+      res.json(dbJourney);
+    });
+  });
+
     // Create a new Journey
   app.post("/api/journeys", function(req, res) {
     db.journey.create({
@@ -58,7 +83,7 @@ module.exports = function(app) {
 
 
     // GET, POST, and DELETE for ENEMIES
-// get all journeys
+// get all enemies
 app.get("/api/enemies", function(req, res) {
   db.enemy.findAll({}).then(function(dbEnemies) {
     
@@ -66,7 +91,22 @@ app.get("/api/enemies", function(req, res) {
   });
 });
 
-  // Create a new Journey
+
+// get ONE Enemy
+app.get("/api/enemies/:id", function(req, res) {
+  db.enemy.findOne({
+    where:{
+      id: req.params.id
+    }
+  }).then(function(dbEnemy) {
+    
+    res.json(dbEnemy);
+  });
+});
+
+
+
+  // Create a new Enemy
   app.post("/api/enemies", function(req, res) {
     
     db.enemy.create({
@@ -80,7 +120,7 @@ app.get("/api/enemies", function(req, res) {
     });
   });
 
-  // Delete Journey
+  // Delete Enemy
   app.delete("/api/enemies/:id", function(req, res) {
     db.enemy.destroy({ where: { id: req.params.id } }).then(function(dbEnemies) {
       res.json(dbEnemies);
