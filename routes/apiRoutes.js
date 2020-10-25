@@ -17,7 +17,7 @@ module.exports = function(app) {
       }
     }).then(function(dbChar) {
       
-      res.json(dbChar));
+      res.json(dbChar);
     });
   });
 
