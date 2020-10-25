@@ -28,7 +28,25 @@
         </div>
 
         <div class="animation">
+                <div class="mo-path">
+                        <div class="pathwalker circle"></div>
+                        <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                                <path class="pathy" stroke="#000" id="svg_4"
+                                        d="m738.5,334.91813c-89.42756,-322.47917 -418.13429,-79.98164 -314.20496,0c103.92933,79.98164 -203.02474,222.92755 -369.79506,92.74467"
+                                        opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5"
+                                        fill="#fff" />
+                        </svg>
+                </div>
 
+        </div>
+
+
+        <div class="return-from-journey char-div">
+                <h2>Mission Complete!</h2>
+                <h5 class="treasure card-title">{{characters.name}} found a {{journeys.item_name}}.</h5>
+                <p class="card-text">{{journeys.item_name}} is a {{journeys.item_type}} that will grant
+                        {{journeys.xp}}xp.</p>
+                <p class="card-text">Armor adds xp to health, weapons to strength, and spells to magic.</p>
         </div>
 
 </div>

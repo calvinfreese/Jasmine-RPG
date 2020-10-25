@@ -1,6 +1,17 @@
 /* Animation for background*/
+.intro {
+  height: 50px;
+  margin-bottom: 25px;
+}
 
- 
+.type-intro {
+  font-size: 5em;
+  font-family: 'La Belle Aurore', cursive;
+}
+
+.formy {
+  display: none;
+}
 /* Character */
 .character {}
 .char-div {
@@ -89,10 +100,21 @@
   display: none;
 }
 
+
 .animation {
-  height: 30px;
-  width: 30px;
-  background-color: 
+  display: none;
+}
+.circle {
+  background-color: #2A324B;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+
+
+.return-from-journey {
+  display: none;
 }
 
 /* svg treasure map */
