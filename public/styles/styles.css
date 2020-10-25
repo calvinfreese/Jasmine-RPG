@@ -124,9 +124,18 @@
   margin: 0 auto;
 }
 
-.fight {
-  display: none;
+
+/* Footer */
+.ft-main {
+  padding: 20px 30px;
+  display: flex;
+  flex-wrap: wrap;
+
+
+  .fight {
+    display: none;
+
+ .ft-main-item2{
+  float: right;
+  
 }
-
-
-
