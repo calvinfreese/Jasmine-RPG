@@ -35,9 +35,9 @@ let addJourney = function(event) {
         name: $("#journeyText").val().trim(),
         xp: $("#journeyXP").val().trim(),
         item_type: $("#itemType").val().trim(),
-        item_type: $("#itemName").val().trim()
+        item_name: $("#itemName").val().trim()
     };
-
+    console.log(newJourney);
     if(!(newJourney)) {
         alert("All fields for Journey are required!");
         return;
