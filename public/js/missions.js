@@ -1,6 +1,27 @@
 
+let API = {
+    getAll: function(type){
+       return $.ajax({
+            method: "GET",
+            url: "/api/" + type
+        });
+    },
+    getOne: function(type, id) {
+        return $.ajax({
+            method: "GET",
+            url: "/api/" + type + "/:" + id
+        });
+    },
+    postAll: function(payload, type) {
+        return $.ajax({
+            method: "PUT",
+            url:"/api/" + type
+            data: payload
+        })
+    }
+    
+}
 
-let arr = ['alpha', 'beta', 'charlie', 'delta', 'edward'];
 
 
 function hideInput1() {
@@ -46,6 +67,11 @@ function animate() {
         duration: 1000,
         loop: true
     });
+}
+
+
+function addXP() {
+
 }
 
 
