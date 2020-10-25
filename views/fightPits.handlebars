@@ -15,8 +15,8 @@
                 <label for="character-select">Character select</label>
                 <select class="form-control" id="char-select" name="char-select">
 
-                    {{#each characters}
-                    <option value='{{id}}'>{{name}}</option>
+                    {{#each characters}}
+                    <option value='{{id}}'>{{name}} ({{race}} {{class}})</option>
                     {{/each}}
                 </select>
                 <button type="button" class="btn btn-warning next">Next</button>
@@ -28,11 +28,12 @@
                 <select class="form-control" id="enemy-select" name="enemy-select">
 
                     {{#each enemies}}
-                    <option value='{{id}}'>{{name}}</option>
+                    <option value='{{id}}'>{{name}} ({{race}})</option>
                     {{/each}}
                 </select>
+                <button type="button" class="btn btn-warning hide-enemy-select">Enemy Now</button>
             </div>
-            <button type="button" class="btn btn-warning hide-enemy-select">Enemy Now</button>
+        </form>
     </div>
 
     <div class="fight char-div">

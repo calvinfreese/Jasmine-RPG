@@ -21,6 +21,27 @@ let API = {
     }
 }
 
+class Entity {
+    constructor(name, race, strength, health) {
+        this.name=name;
+        this.race=race;
+        this.strength=strength;
+        this.health=health;
+    }
+
+    attack(opponent){
+        opponent.health -= this.strength;
+    }
+
+    isAlive(){
+        if(this.health <= 0) {
+            console.log(`${this.name} has died`);
+            return false; 
+        } 
+        return true;
+    }
+}
+
 function hideInput1() {
     $(".input1").hide(400, "swing", function(){
        
@@ -33,10 +54,7 @@ function saveSelectValues(event) {
     event.preventDefault();
     let characterID = $("#char-select").val().trim();
     let enemyID = $("#enemy-select").val().trim();
-
-    console.log(characterID);
-    console.log(journeyID);
-    $(".enemy-select-form").hide(400, "swing", function(){
+    $(".mission-box").hide(400, "swing", function(){
         $(".fight").show();
         $(".character-name").attr("data-id", characterID);
         $(".enemy-name").attr("data-id", enemyID);
@@ -52,11 +70,19 @@ function saveSelectValues(event) {
     );
 }
 
-function attackEnemy(){
-    let characterID = $("#")
-    
-    $(".character-name").attr("data-id", characterID);
+function classInstantiation(entity) {
+    let newEntity = new Entity(entity.name, entity.race, entity.strength, entity.health);
+     
 }
+
+function attackEnemy(){
+    alert("You're swinging at the enemy! Woah!");
+}
+
+function fleeFightpits(){
+    alert("You're Fleeing!");
+}
+
 $(".next").on("click", hideInput1);
 $(".hide-enemy-select").on("click", saveSelectValues);
 $(".attack").on("click", attackEnemy);
