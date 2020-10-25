@@ -1,6 +1,17 @@
 /* Animation for background*/
+.intro {
+  height: 50px;
+  margin-bottom: 25px;
+}
 
- 
+.type-intro {
+  font-size: 5em;
+  font-family: 'La Belle Aurore', cursive;
+}
+
+.formy {
+  display: none;
+}
 /* Character */
 .character {}
 .char-div {
