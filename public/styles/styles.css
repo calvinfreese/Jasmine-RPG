@@ -12,61 +12,21 @@
 .formy {
   display: none;
 }
-/* Character */
-.character {}
+
+
 .char-div {
   margin-top: 70px;
 }
-.character-form {}
-.char-race {}
-.char-class {}
-
-/* Buttons  */
-#signUpBtn {}
-.signUpBtn {}
-.button {}
-.Submit-button {} 
-.btn .btn-danger .float-right .delete {}
 
 .card {
   margin-bottom: 20px;
   
 }
-/*.card .mt-4 {
 
 
-}
-.card-body {}
-.card-title {}
-
-/* List Items* */
-.list {}
 .list-group-item {
   line-height: 2.5;
 }
-.list-group {} 
-
-/* Examples */
-.example-text {}
-#example-text {}
-#example-description {}
-#example-list {}
-.example-list {}
-.example.id {}
-.example.description {}
-
-/* Form */
-.character-form {}
-.form-group {}
-.form-control {}
-
-/* Player */
-#player-name {}
-#player-age {}
-#player-race {}
-#player-class {}
-.player-age {}
-.player-name {}
 
 
 /* Adventures  */
@@ -103,15 +63,115 @@
 
 .animation {
   display: none;
+ 
+  margin: 0 auto;
+}
+
+.grid {
+  display: flex;
 }
 .circle {
+  flex: 1;
   background-color: #2A324B;
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+}
+.move-circle {
+  animation: color-change-one 1s infinite;
+}
+
+.second-move {
+  animation: color-change-two 1s infinite;
 }
 
 
+
+
+
+.animation-wrapper {
+  position: relative;
+}
+
+.svg-test {
+  position: relative;
+  border: 7px solid #280000;
+  border-radius: 2px;
+  background-color: #EDD4B2;
+  margin-top: 70px;
+  width: fit-content;
+}
+
+.boxy {
+  animation: color-change-one 8s;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+ 
+}
+
+#redX {
+  
+  
+  font-family: 'La Belle Aurore', cursive;
+  position: absolute;
+  right: 15px;
+  animation: highlight-X 8s;
+  
+}
+
+#startDiv {
+  color: #074B28;
+  font-size: 4em;
+  font-family: 'La Belle Aurore', cursive;
+  position: absolute;
+  bottom: 1px;
+  left: 60px;
+}
+
+@keyframes color-change-one {
+  0% {
+    background-color: #2A324B;
+  }
+  80%{
+    background-color: #074B28;
+  }
+  100% {
+    background-color: #329F5B;
+  }
+}
+
+@keyframes highlight-X {
+  0% {
+    color:#9E2B25;
+    font-size: 5em;
+  }
+
+  90% {
+    font-size: 5em;
+    transform: rotate(0);
+
+  }
+  100% {
+    font-size: 6em;
+    transform: rotate(360deg);
+    color: #329F5B;
+  }
+}
+
+#svg-id {
+  padding: 0;
+  margin: 0 auto;
+
+}
+.stroke-path {
+  fill: none;
+  stroke: #495867;
+  stroke-width: 5px;
+  padding: 0;
+  margin: 0;
+}
 
 .return-from-journey {
   display: none;

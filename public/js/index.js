@@ -99,21 +99,23 @@ var handleDeleteBtnClick = function() {
   });
 };
 
-
-let options = {
-  strings: ["Hello, Adventurer... ^1000", "Shall we begin?"],
-  loop: false,
-  smartBackspace: true,
-  backSpeed: 50,
-  typeSpeed: 100,
-  showCursor: false
+function typing() {
+  let options = {
+    strings: ["Hello, Adventurer... ^1000", "Shall we begin?"],
+    loop: false,
+    smartBackspace: true,
+    backSpeed: 50,
+    typeSpeed: 100,
+    showCursor: false
+  }
+  let typed = new Typed(".type-intro", options);
+  
+  setTimeout(function(){
+    $(".formy").fadeIn(8000);
+  }, 5000)
 }
-let typed = new Typed(".type-intro", options);
 
-setTimeout(function(){
-  $(".formy").fadeIn(8000);
-}, 5000)
-
+typing();
 
 // Add event listeners to the submit and delete buttons
 $(".character-form").on("submit", handleFormSubmit);

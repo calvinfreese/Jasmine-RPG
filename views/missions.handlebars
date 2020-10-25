@@ -28,13 +28,20 @@
         </div>
 
         <div class="animation">
-                <div class="mo-path">
-                        <div class="pathwalker circle"></div>
-                        <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-                                <path class="pathy" stroke="#000" id="svg_4"
-                                        d="m738.5,334.91813c-89.42756,-322.47917 -418.13429,-79.98164 -314.20496,0c103.92933,79.98164 -203.02474,222.92755 -369.79506,92.74467"
-                                        opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5"
-                                        fill="#fff" />
+
+                <div class="svg-test">
+
+                        <div id="redX">
+                                <span id="xid">X</span>
+                        </div>
+                        <div id="startDiv">
+                                <span id="start">start</span>
+                        </div>
+                        <div class="boxy"></div>
+                        <svg id="svg-id" width="1000" height="300">
+                                <path class="stroke-path"
+                                        d="M 32 269 Q 167 29 285 136 Q 408 269 563 143 C 706 0 850 220 943 48 ">
+                                </path>
                         </svg>
                 </div>
 
@@ -43,10 +50,26 @@
 
         <div class="return-from-journey char-div">
                 <h2>Mission Complete!</h2>
-                <h5 class="treasure card-title">{{characters.name}} found a {{journeys.item_name}}.</h5>
-                <p class="card-text">{{journeys.item_name}} is a {{journeys.item_type}} that will grant
-                        {{journeys.xp}}xp.</p>
-                <p class="card-text">Armor adds xp to health, weapons to strength, and spells to magic.</p>
+                <h5 class="complete-h5 card-title"><span class="complete-char"></span> found
+                        <span class="complete-item"></span>!</h5>
+                <p class="card-text"><span class="journey-item-name"></span> is a <span
+                                class="journey-item-type"></span> that
+                        will grant
+                        <span class="xpType"></span> <span class="journey-xp"></span>xp.</p>
+                <p class="card-text">
+                <ul>
+                        <li>
+                                Armor adds xp to health.
+                        </li>
+                        <li>
+                                Weapons add xp to strength.
+                        </li>
+                        <li>
+                                Spells add xp to magic.
+                        </li>
+                </ul>
+                </p>
+                <a href="/adventures" class="btn btn-primary">Go back to the adventures page.</a>
         </div>
 
 </div>
