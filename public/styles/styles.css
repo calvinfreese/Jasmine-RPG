@@ -102,5 +102,15 @@
   margin: 0 auto;
 }
 
+/* Footer */
+.ft-main {
+  padding: 20px 30px;
+  display: flex;
+  flex-wrap: wrap;
 
+}
 
+ .ft-main-item2{
+  float: right;
+  
+}
