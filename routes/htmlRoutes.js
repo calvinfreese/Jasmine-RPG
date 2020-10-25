@@ -50,9 +50,9 @@ app.get("/training", function(req, res){
 
 app.get("/fight-pits", function(req, res) {
   db.character.findAll({}).then(function(dbChars){
-    db.enemy.findAll({}).then(dbEnemies){
+    db.enemy.findAll({}).then(function(dbEnemies){
       res.render("fightPits", {characters: dbChars, enemies: dbEnemies});
-    }
+    });
     
   });
   

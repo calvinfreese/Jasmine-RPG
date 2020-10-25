@@ -4,6 +4,8 @@ var $exampleDescription = $("#example-description");
 var $submitBtn = $("#signUpBtn");
 var $exampleList = $("#example-list");
 
+
+
 // The API object contains methods for each kind of request we'll make
 var API = {
   saveCharacter: function(newCharacter) {
@@ -96,6 +98,22 @@ var handleDeleteBtnClick = function() {
     refreshExamples();
   });
 };
+
+
+let options = {
+  strings: ["Hello, Adventurer... ^1000", "Shall we begin?"],
+  loop: false,
+  smartBackspace: true,
+  backSpeed: 50,
+  typeSpeed: 100,
+  showCursor: false
+}
+let typed = new Typed(".type-intro", options);
+
+setTimeout(function(){
+  $(".formy").fadeIn(8000);
+}, 5000)
+
 
 // Add event listeners to the submit and delete buttons
 $(".character-form").on("submit", handleFormSubmit);

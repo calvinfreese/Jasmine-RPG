@@ -15,8 +15,8 @@
                 <label for="character-select">Character select</label>
                 <select class="form-control" id="char-select" name="char-select">
 
-                    {{#each characters}
-                    <option value='{{id}}'>{{name}}</option>
+                    {{#each characters}}
+                    <option value='{{id}}'>{{name}} ({{race}} {{class}})</option>
                     {{/each}}
                 </select>
                 <button type="button" class="btn btn-warning next">Next</button>
@@ -28,22 +28,25 @@
                 <select class="form-control" id="enemy-select" name="enemy-select">
 
                     {{#each enemies}}
-                    <option value='{{id}}'>{{name}}</option>
+                    <option value='{{id}}'>{{name}} ({{race}})</option>
                     {{/each}}
                 </select>
+                <button type="button" class="btn btn-warning hide-enemy-select">Enemy Now</button>
             </div>
-            <button type="button" class="btn btn-warning hide-enemy-select">Enemy Now</button>
+        </form>
     </div>
 
     <div class="fight char-div">
         <div class="row">
             <div class="col-sm-6">
+                <h4 class="character-name" data-id="x"></h4>
                 <div class="progress">
                     <div class="progress-bar bg-danger character-health" role="progressbar" style="width: 100%"
                         aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <div class="col-sm-6">
+                <h4 class="enemy-name" data-id="y"></h4>
                 <div class="progress">
                     <div class="progress-bar bg-danger enemy-health" role="progressbar" style="width: 100%"
                         aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
@@ -59,7 +62,7 @@
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<script src="/js/missions.js"></script>
+<script src="/js/fightpits.js"></script>
 
 {{!-- card or div(row/col)= display of none in css [see mission-animation class in css for example of display:none]--}}
 {{!-- you defeated x amt of enemies --}}

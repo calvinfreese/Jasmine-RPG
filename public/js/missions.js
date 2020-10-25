@@ -1,6 +1,27 @@
 
+let API = {
+    getAll: function(type){
+       return $.ajax({
+            method: "GET",
+            url: "/api/" + type
+        });
+    },
+    getOne: function(type, id) {
+        return $.ajax({
+            method: "GET",
+            url: "/api/" + type + "/" + id
+        });
+    },
+    postAll: function(payload, type) {
+        return $.ajax({
+            method: "PUT",
+            url:"/api/" + type,
+            data: payload
+        })
+    }
+    
+}
 
-let arr = ['alpha', 'beta', 'charlie', 'delta', 'edward'];
 
 
 function hideInput1() {
@@ -20,9 +41,11 @@ function saveSelectValues(event) {
     console.log(characterID);
     console.log(journeyID);
 
-    $(".show-mission").show();
-
-   
+    $(".mission-box").hide(400, "swing", function(){
+        $(".animation").show();
+    animate();
+    });
+    
 }
 
 function resetAdventure() {
@@ -34,19 +57,28 @@ function resetAdventure() {
     })
 }
 
+
+// on animate completion, redirect to new page.
 function animate() {
-    let path = anime.path('.treasureMap path');
+    let path = anime.path('.animation .pathy');
+    
     anime({
-        targets: "#Capa_1 .travel-box",
+        targets: ".animation .pathwalker",
         translateX: path('x'),
         translateY: path('y'),
         rotate: path('angle'),
-        backgroundColor: '#FFF',
+        backgroundColor: '#70AE6E',
         easing: 'linear',
-        duration: 1000,
+        duration: 3000,
         loop: true
     });
+    console.log(anime);
 }
+
+
+// function addXP() {
+
+// }
 
 
 

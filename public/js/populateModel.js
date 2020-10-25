@@ -33,7 +33,9 @@ let addJourney = function(event) {
 
     let newJourney = {
         name: $("#journeyText").val().trim(),
-        xp: $("#journeyXP").val().trim()
+        xp: $("#journeyXP").val().trim(),
+        item_type: $("#itemType").val().trim(),
+        item_type: $("#itemName").val().trim()
     };
 
     if(!(newJourney)) {
@@ -48,6 +50,8 @@ let addJourney = function(event) {
     //sets form values back to empty
     $("#journeyText").val("");
     $("#journeyXP").val("");
+    $("#itemType").val("");
+    $("#itemName").val("");
 }
 
 //turns Enemy form values into object for database, then triggers the post to the database via API
