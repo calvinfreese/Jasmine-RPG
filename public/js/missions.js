@@ -1,6 +1,27 @@
 
+let API = {
+    getAll: function(type){
+       return $.ajax({
+            method: "GET",
+            url: "/api/" + type
+        });
+    },
+    getOne: function(type, id) {
+        return $.ajax({
+            method: "GET",
+            url: "/api/" + type + "/:" + id
+        });
+    },
+    postAll: function(payload, type) {
+        return $.ajax({
+            method: "PUT",
+            url:"/api/" + type
+            data: payload
+        })
+    }
+    
+}
 
-let arr = ['alpha', 'beta', 'charlie', 'delta', 'edward'];
 
 
 function hideInput1() {
@@ -19,6 +40,10 @@ function saveSelectValues(event) {
 
     console.log(characterID);
     console.log(journeyID);
+
+    $(".show-mission").show();
+
+   
 }
 
 function resetAdventure() {
@@ -45,7 +70,13 @@ function animate() {
 }
 
 
+function addXP() {
+
+}
+
+
 
 
 $(".next").on("click", hideInput1);
 $(".hide-mission-select").on("click", saveSelectValues);
+$(".show-mission").on("click", resetAdventure)
