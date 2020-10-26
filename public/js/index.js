@@ -47,10 +47,10 @@ var handleFormSubmit = function(event) {
     console.log(newCharacter, ' added!');
   });
 
-  $("#.player_name").val("");
-  $("#.player_age").val("");
-  $("#.char_race").val("");
-  $("#.char_class").val("");
+  $("#player_name").val("");
+  $("#player_age").val("");
+  $("#char_race").val("");
+  $("#char_class").val("");
   
 };
 
