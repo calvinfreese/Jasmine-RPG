@@ -182,14 +182,33 @@
 
 
 /* Footer */
-.ft-main {
-  padding: 20px 30px;
-  display: flex;
-  flex-wrap: wrap;
+/*footer {
+  float: left;
+  background-color: #fff;
+  color: blue;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  */
+
+ .container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
 }
 
- .ft-main-item2{
-  float: right;
+.footer {
+  float: left;
+  background-color: #f5f5f5;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
   
-}
 
+
+  .fight {
+    display: none;
+}
