@@ -3,7 +3,7 @@ var db = require("../models");
 module.exports = function(app) {
   // Get all characters
   app.get("/api/characters", function(req, res) {
-    db.character.findAll({}).then(function(dbChars) {
+    db.characters.findAll({}).then(function(dbChars) {
       
       res.json(dbChars);
     });
@@ -11,7 +11,7 @@ module.exports = function(app) {
 
   // get One Character
   app.get("/api/characters/:id", function(req, res) {
-    db.character.findOne({
+    db.characters.findOne({
       where:{
         id: req.params.id
       }
@@ -24,7 +24,7 @@ module.exports = function(app) {
 
   // Create a new Character
   app.post("/api/characters", function(req, res) {
-    db.character.create({
+    db.characters.create({
       name: req.body.name,
       age:req.body.age,
       race: req.body.race,
@@ -38,7 +38,7 @@ module.exports = function(app) {
 
   // update character where id = req.body.id
   app.put("/api/characters", function(req, res){
-    db.character.update(
+    db.characters.update(
       req. body, 
       {
         where: {
@@ -51,7 +51,7 @@ module.exports = function(app) {
 
   // Delete a character by id
   app.delete("/api/characters/:id", function(req, res) {
-    db.character.destroy({ where: { id: req.params.id } }).then(function(dbChar) {
+    db.characters.destroy({ where: { id: req.params.id } }).then(function(dbChar) {
       res.json(dbChar);
     });
   });
