@@ -45,12 +45,12 @@ Welcome to the JasminRPG. This website was developed to to be a rpg site. Once o
 
 ## Screenshots
 #### Create Character
-![Tour](./public/imgs/home-page)
+![Tour](./public/imgs/home-page.png)
 #### View Characters
- ![home](./public/imgs/all-characters)
+ ![home](./public/imgs/all-characters.png)
 
 #### Adventures Page
-![home](./public/imgs/adventures)
+![home](./public/imgs/adventures.png)
 
 ## Built With
 HTML
