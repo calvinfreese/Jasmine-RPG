@@ -19,7 +19,9 @@
                     <option value='{{id}}'>{{name}} ({{race}} {{class}})</option>
                     {{/each}}
                 </select>
-                <button type="button" class="btn btn-warning next">Next</button>
+                <div class="btn-spacing">
+                    <button type="button" class="btn btn-warning next">Next</button>
+                </div>
             </div>
 
 
@@ -31,7 +33,10 @@
                     <option value='{{id}}'>{{name}} ({{race}})</option>
                     {{/each}}
                 </select>
-                <button type="button" class="btn btn-warning hide-enemy-select">Enemy Now</button>
+                <div class="btn-spacing">
+                    <button type="button" class="btn btn-warning hide-enemy-select">Enemy Now</button>
+                </div>
+
             </div>
         </form>
     </div>
@@ -61,7 +66,8 @@
         </div>
     </div>
 
-    <h6><span class="strXP"></span>xp added to strength. <span class="healthXP"></span>xp added to health.</h6>
+    <h6 class="xpH6"><span class="strXP"></span>xp added to strength. <span class="healthXP"></span>xp added to health.
+    </h6>
     <a href="/adventures" class="btn-spacing return-adv btn btn-primary">Go back to the adventures page.</a>
 </div>
 
