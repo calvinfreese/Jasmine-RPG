@@ -1,17 +1,18 @@
-/* Animation for background*/
+/* createPlayer.handlebars*/
 .intro {
   height: 50px;
   margin-bottom: 25px;
 }
 
-.type-intro {
-  font-size: 5em;
-  font-family: 'La Belle Aurore', cursive;
-}
+  .type-intro {
+    font-size: 5em;
+    font-family: 'La Belle Aurore', cursive;
+  }
 
 .formy {
   display: none;
 }
+
 
 
 .char-div {
@@ -22,8 +23,6 @@
   margin-bottom: 20px;
   
 }
-
-
 .list-group-item {
   line-height: 2.5;
 }
@@ -41,7 +40,7 @@
   margin: 0 auto;
 }
 
-/*  missions */
+/* for missions.handlebars */
 .fadin-page { 
   animation: fadeInAnimation ease 3s; 
   animation-iteration-count: 1; 
@@ -70,25 +69,6 @@
 .grid {
   display: flex;
 }
-.circle {
-  flex: 1;
-  background-color: #2A324B;
-  border-radius: 50%;
-  height: 30px;
-  width: 30px;
-  position: absolute;
-}
-.move-circle {
-  animation: color-change-one 1s infinite;
-}
-
-.second-move {
-  animation: color-change-two 1s infinite;
-}
-
-
-
-
 
 .animation-wrapper {
   position: relative;
@@ -185,6 +165,22 @@
 }
 
 
+/* for fightPits.handlebars */
+.fight {
+  display: none;
+}
+
+.btn-spacing {
+  margin: 15px;
+}
+
+
+.return-adv {
+  display: none;
+}
+
+
+
 /* Footer */
 /*footer {
   float: left;
@@ -215,3 +211,4 @@
 
   .fight {
     display: none;
+}
