@@ -47,9 +47,19 @@
 #### Adventures Page
 ![home](#placeholder)
 
+## Built With
+HTML
+JavaScript
+Jquery 
+CSS 
+MYSQL
 
 
 ## Credits
+JS/MYSQL/- Calvin Freese & Billy Sheehan
+HTML/Page Structure-Foos Mahamud
+UI/UX- Liban Esse
+
 
 ## License
 
