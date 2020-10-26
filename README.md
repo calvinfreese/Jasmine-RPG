@@ -8,10 +8,10 @@
   * [License](#License)
 
   ## Live Site
-This is a link to the live site: 
+This is a link to the live site:https://team-jasmine-rpg.herokuapp.com/
   
 ## Description
-Welcome to the JasminRPG. This website was developed to to be a rpg site. Once on the site you will be able to create a character. Once that character is created it is put on an adventure. While on the adventure the player will get prompts to enter text as they play. You will be provided with several choices of skills, spells,  active powers and wearable equipment such as armors and weapons.
+Welcome to the JasminRPG. This website was developed to to be a rpg site. Once on the site you will be able to create a character. Once that character is created it is put on an adventure. While on the adventure the player will get prompts to enter text as they play. You will be provided with several choices of skills, spells,  active powers and wearable equipment such as armors and weapons. The Fight Pit page will give you an opppurtunity to battle against other characters. You will be able to battle using XP points to fight against your enemy.  
 
 
  
