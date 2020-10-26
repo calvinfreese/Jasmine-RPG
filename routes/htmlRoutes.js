@@ -13,7 +13,7 @@ module.exports = function(app) {
 
 
   app.get("/AllCharacters", function(req, res){
-    db.character.findAll({}).then(function(dbChars) {
+    db.characters.findAll({}).then(function(dbChars) {
       
       res.render("AllCharacters", { characters: dbChars });
   
@@ -27,7 +27,7 @@ app.get("/adventures", function(req, res) {
 
   // Load example page and pass in an example by id
   app.get("/characters/:id", function(req, res) {
-    db.Example.findOne({ where: { id: req.params.id } }).then(function(dbChar) {
+    db.characters.findOne({ where: { id: req.params.id } }).then(function(dbChar) {
       res.render("example", {
         character: dbChar
       });
@@ -36,7 +36,7 @@ app.get("/adventures", function(req, res) {
 
 
 app.get("/missions", function (req, res){
-  db.character.findAll({}).then(function(dbChars) {
+  db.characters.findAll({}).then(function(dbChars) {
       db.journey.findAll({}).then(function(dbJourneys) {
         res.render("missions", { characters: dbChars, journeys: dbJourneys });
       });    
@@ -49,7 +49,7 @@ app.get("/training", function(req, res){
 });
 
 app.get("/fight-pits", function(req, res) {
-  db.character.findAll({}).then(function(dbChars){
+  db.characters.findAll({}).then(function(dbChars){
     db.enemy.findAll({}).then(function(dbEnemies){
       res.render("fightPits", {characters: dbChars, enemies: dbEnemies});
     });
