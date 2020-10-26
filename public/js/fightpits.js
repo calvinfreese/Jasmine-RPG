@@ -111,7 +111,6 @@ function attackEnemy(char, enemy){
     } 
     
 }
-
 function endMatch() {
     $(".return-adv").show();
     $(".attack").hide();
@@ -135,7 +134,7 @@ function enemyAttack(char, enemy) {
 function updateDatabaseWithExp(char, enemy) {
     strXP = enemy.strength /2;
     healthXP = enemy.strength /2;
-
+    $(".xpH6").show();
     $(".strXP").text(strXP);
     $(".healthXP").text(healthXP);
     console.log("str exp gained", strXP);

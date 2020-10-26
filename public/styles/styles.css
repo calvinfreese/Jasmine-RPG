@@ -166,7 +166,7 @@
 
 
 /* for fightPits.handlebars */
-.fight {
+.fight, .return-adv, .xpH6 {
   display: none;
 }
 
@@ -174,10 +174,6 @@
   margin: 15px;
 }
 
-
-.return-adv {
-  display: none;
-}
 
 /* Footer */
 
