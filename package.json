@@ -4,7 +4,7 @@
   "description": "Project 2 Starter",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "nodemon server.js production",
     "lint": "eslint \"./**/*.js\"",
     "fix": "eslint --fix .",
     "test": "npm run lint && NODE_ENV=test mocha -u tdd --reporter spec --exit"
@@ -16,6 +16,7 @@
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
+    "mysql": "^2.18.1",
     "mysql2": "^1.5.3",
     "nodemon": "^2.0.6",
     "sequelize": "^4.38.0",
